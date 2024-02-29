@@ -5,3 +5,4 @@ from django.db import models
 class Employee(models.Model):
     name = models.CharField(max_length=50)
     age = models.IntegerField()
+    dob = models.DateField(null=True)
